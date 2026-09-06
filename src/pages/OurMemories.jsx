@@ -9,70 +9,69 @@ function OurMemories() {
 
   const memories = [
     {
-      src: "/photos/us/u1.jpeg",
-      message: "Our presenations together in formals. 💛",
-    },
-    {
-      src: "/photos/us/u2.jpeg",
-      message: "A little moment that became a big memory. ✨",
-    },
-    {
-      src: "/photos/us/u3.jpeg",
-      message: "Some memories just feel different. 🫶",
-    },
-    {
-      src: "/photos/us/u4.jpeg",
-      message: "This one deserves its own little place here. 🌼",
-    },
-    {
-      src: "/photos/us/u5.jpeg",
-      message: "Proof that the best moments are usually unexpected. 💛",
-    },
-    {
-      src: "/photos/us/u6.jpeg",
-      message: "And somehow this became one of my favourite memories. 🥹",
-    },
-    {
-      src: "/photos/us/u7.jpeg",
-      message: "A snapshot of a moment I wouldn't trade. ✨",
-    },
-    {
-      src: "/photos/us/u8.jpeg",
-      message: "Just us being us. 💛",
-    },
-    {
-      src: "/photos/us/u9.jpeg",
-      message: "A tiny photograph holding a pretty big memory. 🌻",
-    },
-    {
-      src: "/photos/us/u10.jpeg",
-      message: "Our saree Hug!! 📸",
-    },
-    {
-      src: "/photos/us/u11.jpeg",
-      message: "One more little chapter of our story. 💫",
-    },
-    {
-      src: "/photos/us/u12.jpeg",
-      message: "Some pictures don't need much explanation. 🫶",
-    },
-    {
-      src: "/photos/us/u13.jpeg",
-      message: "Another memory safely kept here. 💛",
-    },
-    {
-      src: "/photos/us/u14.jpeg",
-      message: "A moment worth coming back to. ✨",
-    },
-    {
-      src: "/photos/us/u15.jpeg",
-      message: "We look like workers fr 🌼",
-    },
-    {
-      src: "/photos/us/u16.jpeg",
-      message: "And here's to all the memories still waiting for us. 💛",
-    },
-  ];
+  src: `${import.meta.env.BASE_URL}photos/us/u1.jpeg`,
+  message: "Our presenations together in formals. 💛",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u2.jpeg`,
+  message: "A little moment that became a big memory. ✨",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u3.jpeg`,
+  message: "Some memories just feel different. 🫶",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u4.jpeg`,
+  message: "This one deserves its own little place here. 🌼",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u5.jpeg`,
+  message: "Proof that the best moments are usually unexpected. 💛",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u6.jpeg`,
+  message: "And somehow this became one of my favourite memories. 🥹",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u7.jpeg`,
+  message: "A snapshot of a moment I wouldn't trade. ✨",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u8.jpeg`,
+  message: "Just us being us. 💛",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u9.jpeg`,
+  message: "A tiny photograph holding a pretty big memory. 🌻",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u10.jpeg`,
+  message: "Our saree Hug!! 📸",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u11.jpeg`,
+  message: "One more little chapter of our story. 💫",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u12.jpeg`,
+  message: "Some pictures don't need much explanation. 🫶",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u13.jpeg`,
+  message: "Another memory safely kept here. 💛",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u14.jpeg`,
+  message: "A moment worth coming back to. ✨",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u15.jpeg`,
+  message: "We look like workers fr 🌼",
+},
+{
+  src: `${import.meta.env.BASE_URL}photos/us/u16.jpeg`,
+  message: "And here's to all the memories still waiting for us. 💛",
+},]
 
   const toggleFlip = (index) => {
     setFlipped(flipped === index ? null : index);
