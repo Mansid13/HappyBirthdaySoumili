@@ -81,7 +81,7 @@ function OurMemories() {
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u19.jpeg`,
-      message: "four core",
+      message: "Core Four at best",
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u20.jpeg`,
