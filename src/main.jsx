@@ -6,7 +6,13 @@ import "./App.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter
+      basename={
+        window.location.hostname === "localhost"
+          ? "/"
+          : "/HappyBirthdaySoumili"
+      }
+    >
       <App />
     </BrowserRouter>
   </React.StrictMode>
