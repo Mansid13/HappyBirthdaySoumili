@@ -6,14 +6,14 @@ function Party() {
   const navigate = useNavigate();
 
   const memes = [
-    "/photos/memes/m1.jpeg",
-    "/photos/memes/m2.jpeg",
-    "/photos/memes/m3.jpeg",
-    "/photos/memes/m4.jpeg",
-    "/photos/memes/m5.jpeg",
-    "/photos/memes/m6.jpeg",
-    "/photos/memes/m7.jpeg",
-    "/photos/memes/m8.jpeg",
+    `${import.meta.env.BASE_URL}photos/memes/m1.jpeg`,
+    `${import.meta.env.BASE_URL}photos/memes/m2.jpeg`,
+    `${import.meta.env.BASE_URL}photos/memes/m3.jpeg`,
+    `${import.meta.env.BASE_URL}photos/memes/m4.jpeg`,
+    `${import.meta.env.BASE_URL}photos/memes/m5.jpeg`,
+    `${import.meta.env.BASE_URL}photos/memes/m6.jpeg`,
+    `${import.meta.env.BASE_URL}photos/memes/m7.jpeg`,
+    `${import.meta.env.BASE_URL}photos/memes/m8.jpeg`,
   ];
 
   const [noCount, setNoCount] = useState(0);
@@ -261,7 +261,7 @@ function Party() {
                 </h2>
 
                 <small>
-                  Find a restaurant in Mumbai and let Google Maps take over. 💛
+                  Find a restaurant in Thakur Village and let Google Maps take over. 💛
                 </small>
               </div>
             </div>
@@ -274,7 +274,7 @@ function Party() {
               <iframe
                 className="google-restaurant-map"
                 src="https://www.google.com/maps?q=McDonald's+Domino's+Thakur+Village+Kandivali+East+Mumbai&output=embed"
-                title="Restaurants in Mumbai"
+                title="Restaurants in Thakur Village"
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
@@ -293,7 +293,7 @@ function Party() {
             </div>
 
             <div className="map-bottom-note">
-              🍽️ Restaurants around Mumbai · Powered by Google Maps
+              🍽️ Restaurants around Thakur Village · Powered by Google Maps
             </div>
           </section>
 

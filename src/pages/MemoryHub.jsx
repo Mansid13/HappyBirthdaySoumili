@@ -6,7 +6,6 @@ function MemoryHub() {
 
   return (
     <main className="memory-hub-page">
-
       {/* =========================================
           DREAMY BACKGROUND
       ========================================= */}
@@ -62,20 +61,20 @@ function MemoryHub() {
 
           <div className="memory-preview her-preview">
             <img
-              src="/photos/soumili/s3.jpeg"
+              src={`${import.meta.env.BASE_URL}photos/soumili/s3.jpeg`}
               alt="Soumili memory"
             />
 
             <div className="preview-small preview-one">
               <img
-                src="/photos/soumili/s7.jpeg"
+                src={`${import.meta.env.BASE_URL}photos/soumili/s7.jpeg`}
                 alt=""
               />
             </div>
 
             <div className="preview-small preview-two">
               <img
-                src="/photos/soumili/s12.jpeg"
+                src={`${import.meta.env.BASE_URL}photos/soumili/s12.jpeg`}
                 alt=""
               />
             </div>
@@ -84,7 +83,9 @@ function MemoryHub() {
           </div>
 
           <div className="memory-option-content">
-            <p className="option-number">01 · HER WORLD</p>
+            <p className="option-number">
+              01 · HER WORLD
+            </p>
 
             <h2>
               A Little World
@@ -119,22 +120,21 @@ function MemoryHub() {
           <div className="memory-option-tape"></div>
 
           <div className="memory-preview our-preview">
-
             <img
-              src="/photos/us/u9.jpeg"
+              src={`${import.meta.env.BASE_URL}photos/us/u9.jpeg`}
               alt="Our memory"
             />
 
             <div className="preview-small preview-one">
               <img
-                src="/photos/us/u8.jpeg"
+                src={`${import.meta.env.BASE_URL}photos/us/u8.jpeg`}
                 alt=""
               />
             </div>
 
             <div className="preview-small preview-two">
               <img
-                src="/photos/us/u15.jpeg"
+                src={`${import.meta.env.BASE_URL}photos/us/u15.jpeg`}
                 alt=""
               />
             </div>
@@ -143,7 +143,9 @@ function MemoryHub() {
           </div>
 
           <div className="memory-option-content">
-            <p className="option-number">02 · OUR STORY</p>
+            <p className="option-number">
+              02 · OUR STORY
+            </p>
 
             <h2>
               The Memories
@@ -175,7 +177,6 @@ function MemoryHub() {
       ========================================= */}
 
       <section className="party-hub-section">
-
         <div className="party-hub-sparkle">
           ✦
         </div>
@@ -208,7 +209,6 @@ function MemoryHub() {
         <small>
           You can't escape now. 😌
         </small>
-
       </section>
 
       {/* =========================================
@@ -218,7 +218,6 @@ function MemoryHub() {
       <footer className="hub-footer">
         made with a suspicious amount of memories 💛
       </footer>
-
     </main>
   );
 }
