@@ -14,12 +14,12 @@ function HerMemories() {
     { src: "/photos/soumili/s7.jpeg", message: "Okay but look at you 🥹" },
     { src: "/photos/soumili/s8.jpeg", message: "Another one for the memory box ✨" },
     { src: "/photos/soumili/s9.jpeg", message: "You being you 💛" },
-    { src: "/photos/soumili/s10.jpeg", message: "This deserved a little spotlight 🌼" },
+    { src: "/photos/soumili/s15.jpeg", message: "This deserved a little spotlight 🌼" },
     { src: "/photos/soumili/s11.jpeg", message: "A moment frozen in time 📸" },
     { src: "/photos/soumili/s12.jpeg", message: "Too cute not to include 💛" },
     { src: "/photos/soumili/s13.jpeg", message: "One more memory ✨" },
     { src: "/photos/soumili/s14.jpeg", message: "Just a little happiness 🌻" },
-    { src: "/photos/soumili/s15.jpeg", message: "Another page in your story 💛" },
+    { src: "/photos/soumili/s10.jpeg", message: "Another page in your story 💛" },
     { src: "/photos/soumili/s16.jpeg", message: "And here's one more 🥹✨" },
   ];
 

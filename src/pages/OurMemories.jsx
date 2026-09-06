@@ -10,7 +10,7 @@ function OurMemories() {
   const memories = [
     {
       src: "/photos/us/u1.jpeg",
-      message: "One of those moments I'll always remember. 💛",
+      message: "Our presenations together in formals. 💛",
     },
     {
       src: "/photos/us/u2.jpeg",
@@ -46,7 +46,7 @@ function OurMemories() {
     },
     {
       src: "/photos/us/u10.jpeg",
-      message: "This moment deserved to be remembered. 📸",
+      message: "Our saree Hug!! 📸",
     },
     {
       src: "/photos/us/u11.jpeg",
@@ -66,7 +66,7 @@ function OurMemories() {
     },
     {
       src: "/photos/us/u15.jpeg",
-      message: "Still one of the moments that makes me smile. 🌼",
+      message: "We look like workers fr 🌼",
     },
     {
       src: "/photos/us/u16.jpeg",

@@ -273,7 +273,7 @@ function Party() {
             <div className="restaurant-map-wrapper">
               <iframe
                 className="google-restaurant-map"
-                src="https://www.google.com/maps?q=restaurants+in+Mumbai&output=embed"
+                src="https://www.google.com/maps?q=McDonald's+Domino's+Thakur+Village+Kandivali+East+Mumbai&output=embed"
                 title="Restaurants in Mumbai"
                 loading="lazy"
                 allowFullScreen
