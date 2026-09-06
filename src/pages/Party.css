@@ -491,7 +491,7 @@
 
   width: min(1200px, 100%);
 
-  height: 520px;
+  height: 1500px;
 
   transform: translateX(-50%);
 
@@ -540,71 +540,212 @@
 
 
 /* =========================================
-   MEME POSITIONS
+   MEME ANIMATION SETTINGS
 ========================================= */
 
 .meme-1 {
-  top: 20px;
-  left: 4%;
-
   --meme-duration: 7s;
   --meme-delay: -1s;
 }
 
 .meme-2 {
-  top: 10px;
-  right: 5%;
-
   --meme-duration: 8s;
   --meme-delay: -3s;
 }
 
 .meme-3 {
-  top: 125px;
-  left: 18%;
-
   --meme-duration: 8.5s;
   --meme-delay: -2s;
 }
 
 .meme-4 {
-  top: 135px;
-  right: 18%;
-
   --meme-duration: 7.5s;
   --meme-delay: -4s;
 }
 
 .meme-5 {
-  top: 270px;
-  left: 5%;
-
   --meme-duration: 9s;
   --meme-delay: -2s;
 }
 
 .meme-6 {
-  top: 275px;
-  right: 5%;
-
   --meme-duration: 8.2s;
   --meme-delay: -5s;
 }
 
 .meme-7 {
-  top: 350px;
-  left: 32%;
-
   --meme-duration: 7.8s;
   --meme-delay: -3s;
 }
 
 .meme-8 {
-  top: 355px;
-  right: 31%;
-
   --meme-duration: 9.2s;
   --meme-delay: -1s;
+}
+
+
+/* =========================================
+   UNIQUE MEME POSITIONS — DESKTOP
+   CENTER KEPT CLEAR
+========================================= */
+
+/* M1 */
+.meme-universe .meme-bubble:nth-child(1) {
+  top: -30px;
+  left: 0;
+}
+
+/* M2 */
+.meme-universe .meme-bubble:nth-child(2) {
+  top: -20px;
+  right: 0;
+}
+
+/* M3 */
+.meme-universe .meme-bubble:nth-child(3) {
+  top: 120px;
+  left: 1%;
+}
+
+/* M4 */
+.meme-universe .meme-bubble:nth-child(4) {
+  top: 130px;
+  right: 1%;
+}
+
+/* M5 */
+.meme-universe .meme-bubble:nth-child(5) {
+  top: 270px;
+  left: 0;
+}
+
+/* M6 */
+.meme-universe .meme-bubble:nth-child(6) {
+  top: 280px;
+  right: 0;
+}
+
+/* M7 */
+.meme-universe .meme-bubble:nth-child(7) {
+  top: 420px;
+  left: 1%;
+}
+
+/* M8 */
+.meme-universe .meme-bubble:nth-child(8) {
+  top: 430px;
+  right: 1%;
+}
+
+
+/* M9 */
+.meme-universe .meme-bubble:nth-child(9) {
+  top: 60px;
+  left: 16%;
+}
+
+/* M10 */
+.meme-universe .meme-bubble:nth-child(10) {
+  top: 70px;
+  right: 16%;
+}
+
+/* M11 */
+.meme-universe .meme-bubble:nth-child(11) {
+  top: 210px;
+  left: 14%;
+}
+
+/* M12 */
+.meme-universe .meme-bubble:nth-child(12) {
+  top: 220px;
+  right: 14%;
+}
+
+/* M13 */
+.meme-universe .meme-bubble:nth-child(13) {
+  top: 360px;
+  left: 14%;
+}
+
+/* M14 */
+.meme-universe .meme-bubble:nth-child(14) {
+  top: 370px;
+  right: 14%;
+}
+
+
+/* M15 */
+.meme-universe .meme-bubble:nth-child(15) {
+  top: 510px;
+  left: 0;
+}
+
+/* M16 */
+.meme-universe .meme-bubble:nth-child(16) {
+  top: 520px;
+  right: 0;
+}
+
+/* M17 */
+.meme-universe .meme-bubble:nth-child(17) {
+  top: 650px;
+  left: 1%;
+}
+
+/* M18 */
+.meme-universe .meme-bubble:nth-child(18) {
+  top: 660px;
+  right: 1%;
+}
+
+/* M19 */
+.meme-universe .meme-bubble:nth-child(19) {
+  top: 790px;
+  left: 14%;
+}
+
+/* M20 */
+.meme-universe .meme-bubble:nth-child(20) {
+  top: 800px;
+  right: 14%;
+}
+
+
+/* M21 */
+.meme-universe .meme-bubble:nth-child(21) {
+  top: 930px;
+  left: 0;
+}
+
+/* M22 */
+.meme-universe .meme-bubble:nth-child(22) {
+  top: 940px;
+  right: 0;
+}
+
+/* M23 */
+.meme-universe .meme-bubble:nth-child(23) {
+  top: 1070px;
+  left: 1%;
+}
+
+/* M24 */
+.meme-universe .meme-bubble:nth-child(24) {
+  top: 1080px;
+  right: 1%;
+}
+
+/* M25 */
+.meme-universe .meme-bubble:nth-child(25) {
+  top: 1210px;
+  left: 14%;
+}
+
+/* M26 */
+.meme-universe .meme-bubble:nth-child(26) {
+  top: 1220px;
+  right: 14%;
 }
 
 
@@ -649,29 +790,6 @@
   border-radius: 50%;
 
   background: #fff7ca;
-}
-
-
-/* =========================================
-   MEME SHINE
-========================================= */
-
-.meme-shine {
-  position: absolute;
-
-  width: 70px;
-  height: 28px;
-
-  top: 25px;
-  left: 30px;
-
-  border-radius: 50%;
-
-  background: rgba(255, 255, 255, 0.4);
-
-  transform: rotate(-35deg);
-
-  pointer-events: none;
 }
 
 
@@ -1297,20 +1415,138 @@
     height: 165px;
   }
 
-  .meme-3 {
-    left: 10%;
+  .meme-universe {
+    height: 1400px;
   }
 
-  .meme-4 {
-    right: 10%;
+  .meme-universe .meme-bubble:nth-child(1) {
+    top: -20px;
+    left: 0;
   }
 
-  .meme-7 {
+  .meme-universe .meme-bubble:nth-child(2) {
+    top: -10px;
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(3) {
+    top: 115px;
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(4) {
+    top: 125px;
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(5) {
+    top: 250px;
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(6) {
+    top: 260px;
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(7) {
+    top: 385px;
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(8) {
+    top: 395px;
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(9) {
+    top: 70px;
     left: 20%;
   }
 
-  .meme-8 {
-    right: 15%;
+  .meme-universe .meme-bubble:nth-child(10) {
+    top: 80px;
+    right: 20%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(11) {
+    top: 205px;
+    left: 18%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(12) {
+    top: 215px;
+    right: 18%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(13) {
+    top: 340px;
+    left: 18%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(14) {
+    top: 350px;
+    right: 18%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(15) {
+    top: 475px;
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(16) {
+    top: 485px;
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(17) {
+    top: 600px;
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(18) {
+    top: 610px;
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(19) {
+    top: 725px;
+    left: 18%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(20) {
+    top: 735px;
+    right: 18%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(21) {
+    top: 850px;
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(22) {
+    top: 860px;
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(23) {
+    top: 975px;
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(24) {
+    top: 985px;
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(25) {
+    top: 1100px;
+    left: 18%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(26) {
+    top: 1110px;
+    right: 18%;
   }
 
   .google-restaurant-map {
@@ -1379,23 +1615,17 @@
      MOBILE MEME CLOUD
   ----------------------------- */
 
-  .meme-universe {
-    position: absolute;
-
-    top: 300px;
-
-    left: 50%;
-
-    width: 100%;
-
-    height: 500px;
-
-    transform: translateX(-50%);
-
-    margin: 0;
-
-    pointer-events: none;
-  }
+ .meme-universe {
+  position: absolute;
+  z-index: 5;
+  top: 330px;
+  left: 50%;
+  width: min(1200px, 100%);
+  height: 1500px;
+  transform: translateX(-50%);
+  margin: 0;
+  pointer-events: none;
+}
 
   .meme-bubble {
     width: 125px;
@@ -1403,54 +1633,203 @@
     height: 125px;
   }
 
-  .meme-1 {
-    top: 10px;
 
-    left: 2%;
-  }
+ /* =========================================
+   MEME POSITIONS — DESKTOP
+   26 UNIQUE POSITIONS
+   CENTER KEPT CLEAR
+========================================= */
 
-  .meme-2 {
-    top: 5px;
+/* =========================================
+   MEME POSITIONS — DESKTOP
+   FILL SIDES FIRST
+   CENTER CONTENT ALWAYS CLEAR
+========================================= */
 
-    right: 2%;
-  }
+/* =========================
+   TOP AREA
+========================= */
 
-  .meme-3 {
-    top: 125px;
+/* M1 */
+.meme-universe .meme-bubble:nth-child(1) {
+  top: -25px;
+  left: 0;
+}
 
-    left: 10%;
-  }
+/* M2 */
+.meme-universe .meme-bubble:nth-child(2) {
+  top: -15px;
+  left: 205px;
+}
 
-  .meme-4 {
-    top: 135px;
+/* M3 */
+.meme-universe .meme-bubble:nth-child(3) {
+  top: -20px;
+  right: 205px;
+}
 
-    right: 8%;
-  }
+/* M4 */
+.meme-universe .meme-bubble:nth-child(4) {
+  top: -25px;
+  right: 0;
+}
 
-  .meme-5 {
-    top: 250px;
 
-    left: 2%;
-  }
+/* =========================
+   SIDES — BESIDE TITLE
+========================= */
 
-  .meme-6 {
-    top: 260px;
+/* M5 */
+.meme-universe .meme-bubble:nth-child(5) {
+  top: 190px;
+  left: 0;
+}
 
-    right: 2%;
-  }
+/* M6 */
+.meme-universe .meme-bubble:nth-child(6) {
+  top: 190px;
+  left: 205px;
+}
 
-  .meme-7 {
-    top: 355px;
+/* M7 */
+.meme-universe .meme-bubble:nth-child(7) {
+  top: 190px;
+  right: 205px;
+}
 
-    left: 17%;
-  }
+/* M8 */
+.meme-universe .meme-bubble:nth-child(8) {
+  top: 190px;
+  right: 0;
+}
 
-  .meme-8 {
-    top: 365px;
 
-    right: 15%;
-  }
+/* =========================
+   MORE BESIDE CENTER
+========================= */
 
+/* M9 */
+.meme-universe .meme-bubble:nth-child(9) {
+  top: 395px;
+  left: 0;
+}
+
+/* M10 */
+.meme-universe .meme-bubble:nth-child(10) {
+  top: 395px;
+  left: 205px;
+}
+
+/* M11 */
+.meme-universe .meme-bubble:nth-child(11) {
+  top: 395px;
+  right: 205px;
+}
+
+/* M12 */
+.meme-universe .meme-bubble:nth-child(12) {
+  top: 395px;
+  right: 0;
+}
+
+
+/* =========================
+   LOWER SIDES
+========================= */
+
+/* M13 */
+.meme-universe .meme-bubble:nth-child(13) {
+  top: 600px;
+  left: 0;
+}
+
+/* M14 */
+.meme-universe .meme-bubble:nth-child(14) {
+  top: 600px;
+  left: 205px;
+}
+
+/* M15 */
+.meme-universe .meme-bubble:nth-child(15) {
+  top: 600px;
+  right: 205px;
+}
+
+/* M16 */
+.meme-universe .meme-bubble:nth-child(16) {
+  top: 600px;
+  right: 0;
+}
+
+
+/* =========================
+   KEEP FILLING SIDES
+========================= */
+
+/* M17 */
+.meme-universe .meme-bubble:nth-child(17) {
+  top: 805px;
+  left: 0;
+}
+
+/* M18 */
+.meme-universe .meme-bubble:nth-child(18) {
+  top: 805px;
+  left: 205px;
+}
+
+/* M19 */
+.meme-universe .meme-bubble:nth-child(19) {
+  top: 805px;
+  right: 205px;
+}
+
+/* M20 */
+.meme-universe .meme-bubble:nth-child(20) {
+  top: 805px;
+  right: 0;
+}
+
+
+/* =========================
+   BOTTOM AREA
+========================= */
+
+/* M21 */
+.meme-universe .meme-bubble:nth-child(21) {
+  top: 1015px;
+  left: 0;
+}
+
+/* M22 */
+.meme-universe .meme-bubble:nth-child(22) {
+  top: 1015px;
+  right: 0;
+}
+
+/* M23 */
+.meme-universe .meme-bubble:nth-child(23) {
+  top: 1225px;
+  left: 0;
+}
+
+/* M24 */
+.meme-universe .meme-bubble:nth-child(24) {
+  top: 1225px;
+  right: 0;
+}
+
+/* M25 */
+.meme-universe .meme-bubble:nth-child(25) {
+  top: 1435px;
+  left: 205px;
+}
+
+/* M26 */
+.meme-universe .meme-bubble:nth-child(26) {
+  top: 1435px;
+  right: 205px;
+}
 
   /* -----------------------------
      YES TRANSITION
@@ -1567,20 +1946,112 @@
     height: 115px;
   }
 
-  .meme-1 {
+  .meme-universe {
+    height: 1300px;
+  }
+
+  .meme-universe .meme-bubble:nth-child(1) {
     left: 0;
   }
 
-  .meme-2 {
+  .meme-universe .meme-bubble:nth-child(2) {
     right: 0;
   }
 
-  .meme-5 {
+  .meme-universe .meme-bubble:nth-child(3) {
     left: 0;
   }
 
-  .meme-6 {
+  .meme-universe .meme-bubble:nth-child(4) {
     right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(5) {
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(6) {
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(7) {
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(8) {
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(9) {
+    left: 10%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(10) {
+    right: 10%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(11) {
+    left: 5%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(12) {
+    right: 5%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(13) {
+    left: 5%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(14) {
+    right: 5%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(15) {
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(16) {
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(17) {
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(18) {
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(19) {
+    left: 5%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(20) {
+    right: 5%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(21) {
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(22) {
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(23) {
+    left: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(24) {
+    right: 0;
+  }
+
+  .meme-universe .meme-bubble:nth-child(25) {
+    left: 5%;
+  }
+
+  .meme-universe .meme-bubble:nth-child(26) {
+    right: 5%;
   }
 
   .real-map-heading h2 {

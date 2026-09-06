@@ -6,15 +6,16 @@ function MemoryHub() {
 
   return (
     <main className="memory-hub-page">
+
       {/* =========================================
-          DREAMY BACKGROUND
+          SOFT BACKGROUND
       ========================================= */}
 
       <div className="hub-glow hub-glow-one"></div>
       <div className="hub-glow hub-glow-two"></div>
       <div className="hub-glow hub-glow-three"></div>
 
-      <div className="hub-stars">
+      <div className="hub-stars" aria-hidden="true">
         <span>✦</span>
         <span>✧</span>
         <span>♡</span>
@@ -46,44 +47,56 @@ function MemoryHub() {
       </header>
 
       {/* =========================================
-          MEMORY CARDS
+          MEMORY PREVIEWS
       ========================================= */}
 
-      <section className="memory-options">
+      <section className="memory-previews">
 
-        {/* HER MEMORIES */}
+        {/* =========================================
+            HER MEMORIES
+        ========================================= */}
 
         <article
-          className="memory-option her-option"
+          className="memory-preview"
           onClick={() => navigate("/her-memories")}
+          role="button"
+          tabIndex="0"
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              navigate("/her-memories");
+            }
+          }}
         >
-          <div className="memory-option-tape"></div>
+          <div className="preview-image-area">
 
-          <div className="memory-preview her-preview">
-            <img
-              src={`${import.meta.env.BASE_URL}photos/soumili/s3.jpeg`}
-              alt="Soumili memory"
-            />
+            <div className="preview-main-image">
+              <img
+                src={`${import.meta.env.BASE_URL}photos/soumili/s3.jpeg`}
+                alt="Soumili memory"
+              />
+            </div>
 
-            <div className="preview-small preview-one">
+            <div className="preview-mini mini-one">
               <img
                 src={`${import.meta.env.BASE_URL}photos/soumili/s7.jpeg`}
                 alt=""
               />
             </div>
 
-            <div className="preview-small preview-two">
+            <div className="preview-mini mini-two">
               <img
                 src={`${import.meta.env.BASE_URL}photos/soumili/s12.jpeg`}
                 alt=""
               />
             </div>
 
-            <div className="preview-heart">♡</div>
+            <div className="preview-heart">
+              ♡
+            </div>
           </div>
 
-          <div className="memory-option-content">
-            <p className="option-number">
+          <div className="preview-content">
+            <p className="preview-number">
               01 · HER WORLD
             </p>
 
@@ -92,58 +105,63 @@ function MemoryHub() {
               <span>Called Soumili</span>
             </h2>
 
-            <p>
-              little snapshots of you,
-              because apparently one page
-              wasn't enough. 🌼
+            <p className="preview-description">
+              Little snapshots of you, because apparently
+              one page wasn't enough. 🌼
             </p>
 
-            <button
-              className="memory-open-button"
-              onClick={(event) => {
-                event.stopPropagation();
-                navigate("/her-memories");
-              }}
-            >
-              Open her memories
-              <span>→</span>
-            </button>
+            <div className="preview-link">
+              <span>Explore her memories</span>
+              <strong>→</strong>
+            </div>
           </div>
         </article>
 
-        {/* OUR MEMORIES */}
+        {/* =========================================
+            OUR MEMORIES
+        ========================================= */}
 
         <article
-          className="memory-option our-option"
+          className="memory-preview"
           onClick={() => navigate("/our-memories")}
+          role="button"
+          tabIndex="0"
+          onKeyDown={(e) => {
+            if (e.key === "Enter" || e.key === " ") {
+              navigate("/our-memories");
+            }
+          }}
         >
-          <div className="memory-option-tape"></div>
+          <div className="preview-image-area">
 
-          <div className="memory-preview our-preview">
-            <img
-              src={`${import.meta.env.BASE_URL}photos/us/u9.jpeg`}
-              alt="Our memory"
-            />
+            <div className="preview-main-image">
+              <img
+                src={`${import.meta.env.BASE_URL}photos/us/u9.jpeg`}
+                alt="Our memory"
+              />
+            </div>
 
-            <div className="preview-small preview-one">
+            <div className="preview-mini mini-one">
               <img
                 src={`${import.meta.env.BASE_URL}photos/us/u8.jpeg`}
                 alt=""
               />
             </div>
 
-            <div className="preview-small preview-two">
+            <div className="preview-mini mini-two">
               <img
                 src={`${import.meta.env.BASE_URL}photos/us/u15.jpeg`}
                 alt=""
               />
             </div>
 
-            <div className="preview-heart">♡</div>
+            <div className="preview-heart">
+              ♡
+            </div>
           </div>
 
-          <div className="memory-option-content">
-            <p className="option-number">
+          <div className="preview-content">
+            <p className="preview-number">
               02 · OUR STORY
             </p>
 
@@ -152,21 +170,15 @@ function MemoryHub() {
               <span>We Made Together</span>
             </h2>
 
-            <p>
-              Moments, questionable decisions,
-              and memories worth keeping. 📸
+            <p className="preview-description">
+              Moments, questionable decisions, and memories
+              worth keeping. 📸
             </p>
 
-            <button
-              className="memory-open-button"
-              onClick={(event) => {
-                event.stopPropagation();
-                navigate("/our-memories");
-              }}
-            >
-              Open our memories
-              <span>→</span>
-            </button>
+            <div className="preview-link">
+              <span>Relive our memories</span>
+              <strong>→</strong>
+            </div>
           </div>
         </article>
 
@@ -177,11 +189,12 @@ function MemoryHub() {
       ========================================= */}
 
       <section className="party-hub-section">
+
         <div className="party-hub-sparkle">
           ✦
         </div>
 
-        <p>
+        <p className="party-eyebrow">
           okay... enough nostalgia
         </p>
 
@@ -209,6 +222,7 @@ function MemoryHub() {
         <small>
           You can't escape now. 😌
         </small>
+
       </section>
 
       {/* =========================================
@@ -218,8 +232,10 @@ function MemoryHub() {
       <footer className="hub-footer">
         made with a suspicious amount of memories 💛
       </footer>
+
     </main>
   );
 }
 
 export default MemoryHub;
+

@@ -9,19 +9,19 @@ function OurMemories() {
   const memories = [
     {
       src: `${import.meta.env.BASE_URL}photos/us/u1.jpeg`,
-      message: "Our presenations together in formals. 💛",
+      message: "Our First IE💛",
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u2.jpeg`,
-      message: "A little moment that became a big memory. ✨",
+      message: "Matching Outfit✨",
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u3.jpeg`,
-      message: "Some memories just feel different. 🫶",
+      message: "A Cute Selfie. 🫶",
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u4.jpeg`,
-      message: "This one deserves its own little place here. 🌼",
+      message: "Random Click on a Randome Day 🌼",
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u5.jpeg`,
@@ -37,7 +37,7 @@ function OurMemories() {
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u8.jpeg`,
-      message: "Just us being us. 💛",
+      message: "The day we danced together 💛",
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u9.jpeg`,
@@ -53,11 +53,11 @@ function OurMemories() {
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u12.jpeg`,
-      message: "Some pictures don't need much explanation. 🫶",
+      message: "We Cooked Ramen Together 🫶",
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u13.jpeg`,
-      message: "Another memory safely kept here. 💛",
+      message: "Our first PhotoBooth💛",
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u14.jpeg`,
@@ -69,7 +69,7 @@ function OurMemories() {
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u16.jpeg`,
-      message: "And here's to all the memories still waiting for us. 💛",
+      message: "A little bus ride💛",
     },
   ];
 
