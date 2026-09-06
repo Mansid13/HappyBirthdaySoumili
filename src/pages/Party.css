@@ -1,0 +1,1621 @@
+/* =========================================
+   PAGE 5 — PARTY
+========================================= */
+
+.party-page {
+  position: relative;
+
+  width: 100%;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+
+  padding: 25px 20px 80px;
+
+  color: #66542c;
+
+  background:
+    radial-gradient(
+      circle at 15% 15%,
+      rgba(255, 226, 77, 0.28),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 25%,
+      rgba(255, 239, 139, 0.3),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 50% 85%,
+      rgba(255, 215, 75, 0.2),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #fffdf2 0%,
+      #fff7cf 50%,
+      #fffdf4 100%
+    );
+
+  transition: background 1s ease;
+}
+
+
+/* =========================================
+   BACKGROUND GLOWS
+========================================= */
+
+.party-glow {
+  position: fixed;
+
+  border-radius: 50%;
+
+  pointer-events: none;
+
+  filter: blur(8px);
+
+  opacity: 0.5;
+
+  z-index: 0;
+}
+
+.party-glow-one {
+  width: 260px;
+  height: 260px;
+
+  top: 5%;
+  left: -100px;
+
+  background: rgba(255, 216, 54, 0.25);
+
+  animation: partyGlow 9s ease-in-out infinite;
+}
+
+.party-glow-two {
+  width: 300px;
+  height: 300px;
+
+  right: -120px;
+  top: 40%;
+
+  background: rgba(255, 235, 117, 0.28);
+
+  animation: partyGlow 11s ease-in-out infinite reverse;
+}
+
+.party-glow-three {
+  width: 230px;
+  height: 230px;
+
+  bottom: 5%;
+  left: 40%;
+
+  background: rgba(255, 211, 65, 0.16);
+
+  animation: partyGlow 10s ease-in-out infinite;
+}
+
+@keyframes partyGlow {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-25px) scale(1.08);
+  }
+}
+
+
+/* =========================================
+   FLOATING STARS
+========================================= */
+
+.party-stars span {
+  position: fixed;
+
+  z-index: 1;
+
+  color: #d4ab2c;
+
+  opacity: 0.45;
+
+  pointer-events: none;
+
+  animation: partyStar 5s ease-in-out infinite;
+}
+
+.party-stars span:nth-child(1) {
+  top: 15%;
+  left: 7%;
+  font-size: 20px;
+}
+
+.party-stars span:nth-child(2) {
+  top: 28%;
+  right: 7%;
+  font-size: 16px;
+  animation-delay: 1s;
+}
+
+.party-stars span:nth-child(3) {
+  top: 46%;
+  left: 5%;
+  font-size: 21px;
+  animation-delay: 2s;
+}
+
+.party-stars span:nth-child(4) {
+  top: 62%;
+  right: 5%;
+  font-size: 25px;
+  animation-delay: 1.5s;
+}
+
+.party-stars span:nth-child(5) {
+  top: 75%;
+  left: 9%;
+  font-size: 17px;
+  animation-delay: 2.5s;
+}
+
+.party-stars span:nth-child(6) {
+  top: 84%;
+  right: 11%;
+  font-size: 20px;
+  animation-delay: 3s;
+}
+
+.party-stars span:nth-child(7) {
+  top: 36%;
+  right: 20%;
+  font-size: 13px;
+  animation-delay: 3.5s;
+}
+
+@keyframes partyStar {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(10deg);
+  }
+}
+
+
+/* =========================================
+   BACK BUTTON
+========================================= */
+
+.party-back {
+  position: relative;
+
+  z-index: 50;
+
+  display: block;
+
+  padding: 9px 16px;
+
+  border: 1px solid rgba(196, 156, 37, 0.25);
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  color: #92752d;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.party-back:hover {
+  transform: translateX(-3px);
+
+  background: rgba(255, 249, 205, 0.9);
+}
+
+
+/* =========================================
+   MAIN PARTY CENTER
+========================================= */
+
+.party-center {
+  position: relative;
+
+  z-index: 20;
+
+  max-width: 700px;
+
+  margin: 55px auto 0;
+
+  text-align: center;
+}
+
+.party-mini-label {
+  color: #b18d31;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 13px;
+
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   CAKE
+========================================= */
+
+.party-cake {
+  margin-top: 15px;
+
+  font-size: 60px;
+
+  animation: cakeFloat 3s ease-in-out infinite;
+}
+
+@keyframes cakeFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(-9px) rotate(2deg);
+  }
+}
+
+
+/* =========================================
+   PARTY HEADING
+========================================= */
+
+.party-center h1 {
+  margin-top: 12px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  font-family: "Dancing Script", cursive;
+
+  font-size: clamp(55px, 9vw, 82px);
+
+  line-height: 0.85;
+
+  color: #725a26;
+}
+
+.party-center h1 span {
+  color: #d0a42a;
+}
+
+
+/* =========================================
+   QUESTION
+========================================= */
+
+.party-question {
+  margin-top: 25px;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 15px;
+
+  line-height: 1.65;
+
+  color: #998455;
+}
+
+.party-question strong {
+  color: #80682f;
+}
+
+
+/* =========================================
+   YES / NO BUTTONS
+========================================= */
+
+.party-buttons {
+  position: relative;
+
+  z-index: 50;
+
+  margin-top: 32px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 15px;
+}
+
+.yes-button,
+.no-button {
+  font-family: "Fredoka", sans-serif;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+
+/* =========================================
+   YES BUTTON
+========================================= */
+
+.yes-button {
+  min-width: 130px;
+
+  padding: 12px 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  border: 1px solid rgba(202, 164, 41, 0.3);
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.78);
+
+  color: #9a7927;
+
+  box-shadow: 0 10px 25px rgba(141, 110, 28, 0.1);
+}
+
+.yes-button span {
+  font-size: 15px;
+
+  font-weight: 600;
+}
+
+.yes-button small {
+  margin-top: 2px;
+
+  font-size: 10px;
+
+  color: #ad9459;
+}
+
+.yes-button:hover {
+  transform: translateY(-4px) scale(1.03);
+
+  box-shadow: 0 15px 30px rgba(141, 110, 28, 0.16);
+
+  background: #fff9d3;
+}
+
+
+/* =========================================
+   NO BUTTON
+========================================= */
+
+.no-button {
+  padding: 15px 23px;
+
+  border: 1px solid rgba(185, 149, 46, 0.2);
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.5);
+
+  color: #a28c5d;
+
+  font-size: 13px;
+}
+
+.no-button:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 246, 194, 0.8);
+
+  box-shadow: 0 10px 20px rgba(141, 110, 28, 0.08);
+}
+
+.no-button:active {
+  transform: scale(0.94);
+}
+
+
+/* =========================================
+   NO COUNTER
+========================================= */
+
+.no-counter {
+  position: relative;
+
+  z-index: 50;
+
+  margin-top: 16px;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 11px;
+
+  color: #a18a55;
+
+  animation: counterAppear 0.3s ease;
+}
+
+.no-counter strong {
+  color: #8f6f25;
+}
+
+.no-counter span {
+  display: block;
+
+  margin-top: 3px;
+
+  color: #b59c68;
+}
+
+@keyframes counterAppear {
+  from {
+    opacity: 0;
+
+    transform: translateY(-5px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+
+/* =========================================
+   MEME UNIVERSE
+========================================= */
+
+.meme-universe {
+  position: absolute;
+
+  z-index: 5;
+
+  top: 330px;
+  left: 50%;
+
+  width: min(1200px, 100%);
+
+  height: 520px;
+
+  transform: translateX(-50%);
+
+  margin: 0;
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   MEME BUBBLE
+========================================= */
+
+.meme-bubble {
+  position: absolute;
+
+  width: 190px;
+  height: 190px;
+
+  border-radius: 50%;
+
+  pointer-events: auto;
+
+  opacity: 0;
+
+  animation:
+    memeAppear 0.75s cubic-bezier(0.2, 0.8, 0.2, 1) forwards,
+    memeDrift var(--meme-duration) ease-in-out infinite;
+
+  animation-delay:
+    0s,
+    var(--meme-delay);
+
+  z-index: calc(5 + var(--meme-index));
+
+  transition: filter 0.3s ease;
+}
+
+.meme-bubble:hover {
+  z-index: 100;
+
+  filter: brightness(1.04);
+
+  animation-play-state: paused;
+}
+
+
+/* =========================================
+   MEME POSITIONS
+========================================= */
+
+.meme-1 {
+  top: 20px;
+  left: 4%;
+
+  --meme-duration: 7s;
+  --meme-delay: -1s;
+}
+
+.meme-2 {
+  top: 10px;
+  right: 5%;
+
+  --meme-duration: 8s;
+  --meme-delay: -3s;
+}
+
+.meme-3 {
+  top: 125px;
+  left: 18%;
+
+  --meme-duration: 8.5s;
+  --meme-delay: -2s;
+}
+
+.meme-4 {
+  top: 135px;
+  right: 18%;
+
+  --meme-duration: 7.5s;
+  --meme-delay: -4s;
+}
+
+.meme-5 {
+  top: 270px;
+  left: 5%;
+
+  --meme-duration: 9s;
+  --meme-delay: -2s;
+}
+
+.meme-6 {
+  top: 275px;
+  right: 5%;
+
+  --meme-duration: 8.2s;
+  --meme-delay: -5s;
+}
+
+.meme-7 {
+  top: 350px;
+  left: 32%;
+
+  --meme-duration: 7.8s;
+  --meme-delay: -3s;
+}
+
+.meme-8 {
+  top: 355px;
+  right: 31%;
+
+  --meme-duration: 9.2s;
+  --meme-delay: -1s;
+}
+
+
+/* =========================================
+   MEME INNER
+========================================= */
+
+.meme-inner {
+  position: relative;
+
+  width: 100%;
+  height: 100%;
+
+  overflow: hidden;
+
+  border-radius: 50%;
+
+  padding: 8px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 246, 186, 0.75)
+    );
+
+  border: 6px solid rgba(255, 255, 255, 0.82);
+
+  box-shadow:
+    0 18px 40px rgba(102, 79, 24, 0.17),
+    inset 0 0 25px rgba(255, 255, 255, 0.45);
+}
+
+.meme-inner img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: contain;
+
+  border-radius: 50%;
+
+  background: #fff7ca;
+}
+
+
+/* =========================================
+   MEME SHINE
+========================================= */
+
+.meme-shine {
+  position: absolute;
+
+  width: 70px;
+  height: 28px;
+
+  top: 25px;
+  left: 30px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.4);
+
+  transform: rotate(-35deg);
+
+  pointer-events: none;
+}
+
+
+/* =========================================
+   MEME NUMBER
+========================================= */
+
+.meme-number {
+  position: absolute;
+
+  right: 18px;
+  bottom: 17px;
+
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.83);
+
+  color: #a78327;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 9px;
+}
+
+
+/* =========================================
+   MEME APPEAR
+========================================= */
+
+@keyframes memeAppear {
+  0% {
+    opacity: 0;
+
+    transform:
+      scale(0.1)
+      rotate(-25deg)
+      translateY(40px);
+  }
+
+  65% {
+    opacity: 1;
+
+    transform:
+      scale(1.1)
+      rotate(5deg)
+      translateY(-8px);
+  }
+
+  100% {
+    opacity: 1;
+
+    transform:
+      scale(1)
+      rotate(0deg)
+      translateY(0);
+  }
+}
+
+
+/* =========================================
+   MEME DRIFT
+========================================= */
+
+@keyframes memeDrift {
+  0%,
+  100% {
+    transform: translate(0, 0) rotate(-2deg);
+  }
+
+  25% {
+    transform: translate(12px, -18px) rotate(3deg);
+  }
+
+  50% {
+    transform: translate(-8px, -30px) rotate(-2deg);
+  }
+
+  75% {
+    transform: translate(-15px, -12px) rotate(2deg);
+  }
+}
+
+
+/* =========================================
+   MEME DISAPPEAR
+========================================= */
+
+.meme-leaving {
+  animation:
+    memeDisappear 1s cubic-bezier(0.6, 0, 0.9, 1) forwards !important;
+}
+
+@keyframes memeDisappear {
+  0% {
+    opacity: 1;
+
+    transform:
+      scale(1)
+      rotate(0deg);
+  }
+
+  35% {
+    opacity: 0.9;
+
+    transform:
+      scale(1.12)
+      rotate(12deg);
+  }
+
+  100% {
+    opacity: 0;
+
+    transform:
+      scale(0.05)
+      rotate(35deg)
+      translateY(-80px);
+  }
+}
+
+
+/* =========================================
+   YES TRANSITION
+========================================= */
+
+.yes-transition {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 200;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  background: rgba(255, 251, 221, 0.9);
+
+  backdrop-filter: blur(10px);
+
+  animation: transitionFade 1.1s ease forwards;
+}
+
+.transition-hearts {
+  font-size: 18px;
+
+  color: #d1a52b;
+
+  letter-spacing: 5px;
+
+  animation: transitionHearts 1.2s ease-in-out infinite;
+}
+
+.transition-icon {
+  margin-top: 20px;
+
+  font-size: 65px;
+
+  animation: transitionIcon 0.8s ease forwards;
+}
+
+.yes-transition h2 {
+  margin-top: 15px;
+
+  font-family: "Dancing Script", cursive;
+
+  font-size: 62px;
+
+  color: #765c26;
+}
+
+.yes-transition p {
+  margin-top: 5px;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 14px;
+
+  color: #9b8552;
+}
+
+@keyframes transitionFade {
+  0% {
+    opacity: 0;
+  }
+
+  20% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes transitionHearts {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@keyframes transitionIcon {
+  0% {
+    transform: scale(0.4) rotate(-15deg);
+
+    opacity: 0;
+  }
+
+  70% {
+    transform: scale(1.15) rotate(5deg);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+/* =========================================
+   ACCEPTED PARTY
+========================================= */
+
+.accepted-party {
+  position: relative;
+
+  z-index: 20;
+
+  max-width: 1000px;
+
+  margin: 70px auto 0;
+
+  text-align: center;
+
+  animation: acceptedAppear 1s ease forwards;
+}
+
+.accepted-sparkles {
+  font-size: 17px;
+
+  color: #d1a52c;
+
+  letter-spacing: 3px;
+}
+
+.accepted-icon {
+  margin-top: 25px;
+
+  font-size: 70px;
+
+  animation: acceptedBounce 1s ease-in-out infinite;
+}
+
+.accepted-small {
+  margin-top: 15px;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 11px;
+
+  letter-spacing: 2px;
+
+  color: #ae8d34;
+}
+
+.accepted-party h1 {
+  margin-top: 8px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  font-family: "Dancing Script", cursive;
+
+  font-size: clamp(55px, 8vw, 78px);
+
+  line-height: 0.9;
+
+  color: #735b28;
+}
+
+.accepted-party h1 span {
+  color: #d0a32b;
+}
+
+.accepted-text {
+  margin-top: 20px;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 14px;
+
+  line-height: 1.6;
+
+  color: #998354;
+}
+
+@keyframes acceptedAppear {
+  from {
+    opacity: 0;
+
+    transform: translateY(30px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes acceptedBounce {
+  0%,
+  100% {
+    transform: translateY(0) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+
+/* =========================================
+   GOOGLE MAP CARD
+========================================= */
+
+.real-map-card {
+  width: min(1000px, 94%);
+
+  margin: 55px auto 0;
+
+  padding: 22px;
+
+  border-radius: 30px;
+
+  background: rgba(255, 252, 226, 0.88);
+
+  border: 1px solid rgba(218, 174, 54, 0.2);
+
+  box-shadow:
+    0 20px 55px rgba(126, 100, 35, 0.12),
+    0 5px 15px rgba(126, 100, 35, 0.06);
+
+  animation: mapCardAppear 0.8s ease 0.3s both;
+}
+
+@keyframes mapCardAppear {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(25px)
+      scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+
+/* =========================================
+   MAP HEADING
+========================================= */
+
+.real-map-heading {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-bottom: 18px;
+
+  text-align: left;
+}
+
+.real-map-heading > span {
+  width: 52px;
+  height: 52px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border-radius: 17px;
+
+  background: #fff4bd;
+
+  font-size: 25px;
+
+  animation: mapPin 2.5s ease-in-out infinite;
+}
+
+.real-map-heading p {
+  margin: 0 0 3px;
+
+  color: #b49336;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 10px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+}
+
+.real-map-heading h2 {
+  margin: 0;
+
+  color: #655126;
+
+  font-family: "Dancing Script", cursive;
+
+  font-size: clamp(25px, 4vw, 38px);
+
+  line-height: 1.1;
+}
+
+.real-map-heading small {
+  display: block;
+
+  margin-top: 5px;
+
+  color: #988454;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 12px;
+}
+
+@keyframes mapPin {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+
+/* =========================================
+   GOOGLE MAP WRAPPER
+========================================= */
+
+.restaurant-map-wrapper {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  border-radius: 22px;
+
+  background: #eee8cf;
+}
+
+
+/* =========================================
+   GOOGLE MAP IFRAME
+========================================= */
+
+.google-restaurant-map {
+  display: block;
+
+  width: 100%;
+
+  height: 480px;
+
+  border: 0;
+
+  border-radius: 22px;
+
+  background: #eee8cf;
+}
+
+
+/* =========================================
+   LIVE LOCATION BUTTON
+========================================= */
+
+.map-location-button {
+  position: absolute;
+
+  left: 18px;
+  bottom: 18px;
+
+  z-index: 10;
+
+  padding: 11px 16px;
+
+  border: 1px solid rgba(210, 169, 44, 0.3);
+
+  border-radius: 999px;
+
+  background: rgba(255, 253, 239, 0.96);
+
+  color: #665126;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 5px 18px rgba(80, 62, 20, 0.18);
+
+  backdrop-filter: blur(8px);
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.map-location-button:hover {
+  transform: translateY(-2px);
+
+  background: #fff9d8;
+
+  box-shadow:
+    0 8px 22px rgba(80, 62, 20, 0.22);
+}
+
+.map-location-button:active {
+  transform: scale(0.96);
+}
+
+
+/* =========================================
+   MAP BOTTOM NOTE
+========================================= */
+
+.map-bottom-note {
+  margin-top: 10px;
+
+  text-align: center;
+
+  color: #9a8554;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   BACK TO MEMORIES
+========================================= */
+
+.back-to-memories {
+  margin-top: 25px;
+
+  padding: 10px 17px;
+
+  border: 1px solid rgba(195, 157, 42, 0.2);
+
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.65);
+
+  color: #92752e;
+
+  font-family: "Fredoka", sans-serif;
+
+  font-size: 12px;
+
+  cursor: pointer;
+
+  transition: 0.25s ease;
+}
+
+.back-to-memories:hover {
+  transform: translateY(-2px);
+
+  background: #fff8cf;
+
+  box-shadow:
+    0 7px 18px rgba(141, 110, 28, 0.08);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+  .meme-bubble {
+    width: 165px;
+
+    height: 165px;
+  }
+
+  .meme-3 {
+    left: 10%;
+  }
+
+  .meme-4 {
+    right: 10%;
+  }
+
+  .meme-7 {
+    left: 20%;
+  }
+
+  .meme-8 {
+    right: 15%;
+  }
+
+  .google-restaurant-map {
+    height: 450px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+  .party-page {
+    padding: 20px 12px 60px;
+
+    min-height: 100vh;
+  }
+
+
+  /* -----------------------------
+     CENTER
+  ----------------------------- */
+
+  .party-center {
+    margin-top: 45px;
+
+    position: relative;
+
+    z-index: 20;
+  }
+
+  .party-center h1 {
+    font-size: 55px;
+  }
+
+  .party-question {
+    font-size: 13px;
+  }
+
+
+  /* -----------------------------
+     BUTTONS
+  ----------------------------- */
+
+  .party-buttons {
+    gap: 10px;
+
+    position: relative;
+
+    z-index: 50;
+  }
+
+  .yes-button {
+    min-width: 120px;
+  }
+
+  .no-counter {
+    position: relative;
+
+    z-index: 50;
+  }
+
+
+  /* -----------------------------
+     MOBILE MEME CLOUD
+  ----------------------------- */
+
+  .meme-universe {
+    position: absolute;
+
+    top: 300px;
+
+    left: 50%;
+
+    width: 100%;
+
+    height: 500px;
+
+    transform: translateX(-50%);
+
+    margin: 0;
+
+    pointer-events: none;
+  }
+
+  .meme-bubble {
+    width: 125px;
+
+    height: 125px;
+  }
+
+  .meme-1 {
+    top: 10px;
+
+    left: 2%;
+  }
+
+  .meme-2 {
+    top: 5px;
+
+    right: 2%;
+  }
+
+  .meme-3 {
+    top: 125px;
+
+    left: 10%;
+  }
+
+  .meme-4 {
+    top: 135px;
+
+    right: 8%;
+  }
+
+  .meme-5 {
+    top: 250px;
+
+    left: 2%;
+  }
+
+  .meme-6 {
+    top: 260px;
+
+    right: 2%;
+  }
+
+  .meme-7 {
+    top: 355px;
+
+    left: 17%;
+  }
+
+  .meme-8 {
+    top: 365px;
+
+    right: 15%;
+  }
+
+
+  /* -----------------------------
+     YES TRANSITION
+  ----------------------------- */
+
+  .yes-transition h2 {
+    font-size: 50px;
+  }
+
+
+  /* -----------------------------
+     ACCEPTED
+  ----------------------------- */
+
+  .accepted-party {
+    margin-top: 50px;
+  }
+
+  .accepted-party h1 {
+    font-size: 55px;
+  }
+
+
+  /* -----------------------------
+     GOOGLE MAP
+  ----------------------------- */
+
+  .real-map-card {
+    width: 94%;
+
+    margin-top: 40px;
+
+    padding: 15px;
+
+    border-radius: 23px;
+  }
+
+  .real-map-heading {
+    gap: 10px;
+
+    margin-bottom: 14px;
+  }
+
+  .real-map-heading > span {
+    width: 43px;
+
+    height: 43px;
+
+    border-radius: 13px;
+
+    font-size: 21px;
+  }
+
+  .real-map-heading p {
+    font-size: 8px;
+
+    letter-spacing: 1.5px;
+  }
+
+  .real-map-heading h2 {
+    font-size: 25px;
+  }
+
+  .real-map-heading small {
+    font-size: 10px;
+  }
+
+  .restaurant-map-wrapper {
+    border-radius: 18px;
+  }
+
+  .google-restaurant-map {
+    height: 390px;
+
+    border-radius: 18px;
+  }
+
+  .map-location-button {
+    left: 10px;
+
+    bottom: 10px;
+
+    padding: 9px 12px;
+
+    font-size: 9px;
+  }
+
+  .map-bottom-note {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 390px) {
+  .party-center h1 {
+    font-size: 48px;
+  }
+
+  .party-cake {
+    font-size: 52px;
+  }
+
+  .party-question {
+    font-size: 12px;
+  }
+
+  .meme-bubble {
+    width: 115px;
+
+    height: 115px;
+  }
+
+  .meme-1 {
+    left: 0;
+  }
+
+  .meme-2 {
+    right: 0;
+  }
+
+  .meme-5 {
+    left: 0;
+  }
+
+  .meme-6 {
+    right: 0;
+  }
+
+  .real-map-heading h2 {
+    font-size: 25px;
+  }
+
+  .google-restaurant-map {
+    height: 350px;
+  }
+
+  .map-location-button {
+    padding: 8px 10px;
+
+    font-size: 8px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  .party-glow,
+  .party-stars span,
+  .party-cake,
+  .meme-bubble,
+  .transition-hearts,
+  .transition-icon,
+  .accepted-icon,
+  .real-map-heading > span {
+    animation: none;
+  }
+
+  .real-map-card {
+    animation: none;
+  }
+}

@@ -1,0 +1,759 @@
+/* =========================================
+   PAGE 3 — SOUMILI'S MEMORIES
+========================================= */
+
+.her-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(255, 229, 113, 0.28), transparent 28%),
+    radial-gradient(circle at 85% 15%, rgba(255, 241, 166, 0.35), transparent 30%),
+    radial-gradient(circle at 50% 90%, rgba(255, 213, 92, 0.18), transparent 35%),
+    linear-gradient(135deg, #fffdf1 0%, #fff8d9 45%, #fffdf3 100%);
+  color: #66542c;
+  padding: 28px 20px 80px;
+}
+
+
+/* =========================================
+   BACKGROUND GLOWS
+========================================= */
+
+.her-glow {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  filter: blur(5px);
+  opacity: 0.55;
+  z-index: 0;
+}
+
+.glow-one {
+  width: 230px;
+  height: 230px;
+  top: 12%;
+  left: -80px;
+  background: rgba(255, 222, 79, 0.25);
+  animation: glowFloat 8s ease-in-out infinite;
+}
+
+.glow-two {
+  width: 300px;
+  height: 300px;
+  right: -110px;
+  top: 42%;
+  background: rgba(255, 235, 126, 0.25);
+  animation: glowFloat 10s ease-in-out infinite reverse;
+}
+
+.glow-three {
+  width: 220px;
+  height: 220px;
+  bottom: 8%;
+  left: 40%;
+  background: rgba(255, 215, 80, 0.16);
+  animation: glowFloat 9s ease-in-out infinite;
+}
+
+@keyframes glowFloat {
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+  }
+
+  50% {
+    transform: translateY(-25px) scale(1.08);
+  }
+}
+
+
+/* =========================================
+   STARS
+========================================= */
+
+.her-stars span {
+  position: fixed;
+  z-index: 1;
+  color: #e3bd3c;
+  opacity: 0.45;
+  pointer-events: none;
+  animation: starFloat 5s ease-in-out infinite;
+}
+
+.her-stars span:nth-child(1) {
+  top: 14%;
+  left: 7%;
+  font-size: 20px;
+}
+
+.her-stars span:nth-child(2) {
+  top: 25%;
+  right: 8%;
+  font-size: 15px;
+  animation-delay: 1s;
+}
+
+.her-stars span:nth-child(3) {
+  top: 48%;
+  left: 4%;
+  font-size: 24px;
+  animation-delay: 2s;
+}
+
+.her-stars span:nth-child(4) {
+  top: 63%;
+  right: 5%;
+  font-size: 18px;
+  animation-delay: 1.5s;
+}
+
+.her-stars span:nth-child(5) {
+  top: 76%;
+  left: 9%;
+  font-size: 20px;
+  animation-delay: 2.5s;
+}
+
+.her-stars span:nth-child(6) {
+  top: 87%;
+  right: 12%;
+  font-size: 16px;
+  animation-delay: 3s;
+}
+
+.her-stars span:nth-child(7) {
+  top: 38%;
+  right: 18%;
+  font-size: 13px;
+  animation-delay: 3.5s;
+}
+
+@keyframes starFloat {
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(10deg);
+  }
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.her-header {
+  position: relative;
+  z-index: 5;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 260px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.her-back-button {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  border: 1px solid rgba(196, 156, 37, 0.25);
+  background: rgba(255, 255, 255, 0.62);
+
+  color: #92752d;
+  padding: 9px 16px;
+  border-radius: 999px;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 13px;
+
+  cursor: pointer;
+
+  box-shadow: 0 7px 20px rgba(178, 143, 43, 0.08);
+
+  transition: 0.25s ease;
+}
+
+.her-back-button:hover {
+  transform: translateX(-3px);
+  background: rgba(255, 249, 205, 0.9);
+}
+
+
+.her-small-title {
+  margin-bottom: 12px;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+
+  color: #b3943c;
+  letter-spacing: 0.5px;
+}
+
+
+.her-heading h1 {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(48px, 7vw, 76px);
+  line-height: 0.95;
+  font-weight: 700;
+
+  color: #735c27;
+}
+
+.her-heading h1 span {
+  color: #d1a82c;
+}
+
+
+.her-description {
+  margin-top: 20px;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: #9a8551;
+}
+
+
+.her-count {
+  position: absolute;
+  right: 0;
+  bottom: 25px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 12px 17px;
+
+  border-radius: 18px;
+
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(218, 183, 73, 0.2);
+
+  box-shadow: 0 8px 25px rgba(179, 145, 44, 0.08);
+}
+
+.her-count span {
+  font-family: "Dancing Script", cursive;
+  font-size: 28px;
+  font-weight: 700;
+  color: #c69b20;
+}
+
+.her-count small {
+  font-family: "Fredoka", sans-serif;
+  font-size: 10px;
+  color: #9c8957;
+}
+
+
+/* =========================================
+   SCRAPBOOK
+========================================= */
+
+.photo-scrapbook {
+  position: relative;
+  z-index: 4;
+
+  max-width: 1180px;
+  margin: 20px auto 0;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 55px 35px;
+
+  padding: 30px 15px 50px;
+}
+
+
+/* =========================================
+   PHOTO CARD
+========================================= */
+
+.memory-photo {
+  position: relative;
+
+  padding: 10px 10px 15px;
+
+  background: #fffdf8;
+
+  border-radius: 4px;
+
+  box-shadow:
+    0 12px 25px rgba(116, 91, 25, 0.13),
+    0 2px 5px rgba(116, 91, 25, 0.08);
+
+  transform: rotate(var(--rotation));
+
+  transition:
+    transform 0.45s cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 0.45s ease;
+
+  cursor: pointer;
+}
+
+.memory-photo:hover {
+  transform:
+    rotate(0deg)
+    translateY(-12px)
+    scale(1.045);
+
+  box-shadow:
+    0 25px 45px rgba(116, 91, 25, 0.22),
+    0 5px 12px rgba(116, 91, 25, 0.1);
+
+  z-index: 20;
+}
+
+
+/* =========================================
+   RANDOM TILTS
+========================================= */
+
+.photo-1 {
+  --rotation: -4deg;
+}
+
+.photo-2 {
+  --rotation: 3deg;
+}
+
+.photo-3 {
+  --rotation: -2deg;
+}
+
+.photo-4 {
+  --rotation: 5deg;
+}
+
+.photo-5 {
+  --rotation: 3deg;
+}
+
+.photo-6 {
+  --rotation: -5deg;
+}
+
+.photo-7 {
+  --rotation: 2deg;
+}
+
+.photo-8 {
+  --rotation: -3deg;
+}
+
+.photo-9 {
+  --rotation: -4deg;
+}
+
+.photo-10 {
+  --rotation: 4deg;
+}
+
+.photo-11 {
+  --rotation: -2deg;
+}
+
+.photo-12 {
+  --rotation: 5deg;
+}
+
+.photo-13 {
+  --rotation: 3deg;
+}
+
+.photo-14 {
+  --rotation: -4deg;
+}
+
+.photo-15 {
+  --rotation: 2deg;
+}
+
+.photo-16 {
+  --rotation: -3deg;
+}
+
+
+/* =========================================
+   PHOTO FRAME
+========================================= */
+
+.photo-frame {
+  position: relative;
+
+  width: 100%;
+  aspect-ratio: 4 / 5;
+
+  overflow: hidden;
+
+  background: #f5edc9;
+}
+
+.photo-frame img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.memory-photo:hover .photo-frame img {
+  transform: scale(1.06);
+}
+
+
+/* =========================================
+   PHOTO OVERLAY
+========================================= */
+
+.photo-overlay {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(255, 220, 76, 0.16);
+
+  opacity: 0;
+
+  transition: opacity 0.35s ease;
+}
+
+.memory-photo:hover .photo-overlay {
+  opacity: 1;
+}
+
+.photo-overlay span {
+  width: 48px;
+  height: 48px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.82);
+
+  color: #d4a92d;
+
+  font-size: 25px;
+
+  box-shadow: 0 8px 20px rgba(91, 73, 25, 0.15);
+}
+
+
+/* =========================================
+   TAPE
+========================================= */
+
+.tape {
+  position: absolute;
+
+  width: 58px;
+  height: 17px;
+
+  top: -7px;
+  left: 50%;
+
+  transform: translateX(-50%) rotate(-2deg);
+
+  background: rgba(246, 220, 117, 0.65);
+
+  box-shadow: 0 2px 5px rgba(103, 83, 30, 0.08);
+
+  z-index: 5;
+}
+
+
+/* =========================================
+   CAPTION
+========================================= */
+
+.photo-caption {
+  min-height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 7px 5px 0;
+
+  text-align: center;
+}
+
+.photo-caption span {
+  font-family: "Dancing Script", cursive;
+
+  font-size: 17px;
+  font-weight: 600;
+
+  color: #806a35;
+}
+
+
+/* =========================================
+   BOTTOM MESSAGE
+========================================= */
+
+.her-bottom {
+  position: relative;
+  z-index: 5;
+
+  max-width: 700px;
+
+  margin: 30px auto 0;
+
+  padding: 55px 20px 20px;
+
+  text-align: center;
+}
+
+.bottom-sparkle {
+  color: #d4ac35;
+  font-size: 24px;
+
+  animation: sparkle 2s ease-in-out infinite;
+}
+
+@keyframes sparkle {
+  0%,
+  100% {
+    transform: scale(1) rotate(0deg);
+  }
+
+  50% {
+    transform: scale(1.25) rotate(12deg);
+  }
+}
+
+.her-bottom > p:first-of-type {
+  margin-top: 15px;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 14px;
+
+  color: #a08c58;
+}
+
+.her-bottom h2 {
+  margin-top: 3px;
+
+  font-family: "Dancing Script", cursive;
+
+  font-size: clamp(34px, 6vw, 48px);
+
+  color: #725a25;
+}
+
+.bottom-subtext {
+  margin-top: 5px;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 13px;
+
+  color: #a08d5d;
+}
+
+
+/* =========================================
+   NEXT BUTTON
+========================================= */
+
+.our-memories-button {
+  margin-top: 28px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 13px 21px;
+
+  border: 1px solid rgba(203, 165, 45, 0.25);
+  border-radius: 999px;
+
+  background: rgba(255, 255, 255, 0.7);
+
+  color: #8b702d;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  box-shadow: 0 10px 25px rgba(151, 119, 34, 0.1);
+
+  transition: 0.3s ease;
+}
+
+.our-memories-button strong {
+  color: #c3971f;
+}
+
+.our-memories-button span {
+  font-size: 18px;
+
+  transition: transform 0.3s ease;
+}
+
+.our-memories-button:hover {
+  transform: translateY(-3px);
+
+  background: rgba(255, 249, 208, 0.95);
+
+  box-shadow: 0 15px 30px rgba(151, 119, 34, 0.14);
+}
+
+.our-memories-button:hover span {
+  transform: translateX(4px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .photo-scrapbook {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 45px 25px;
+  }
+
+  .her-count {
+    position: relative;
+    right: auto;
+    bottom: auto;
+
+    margin-top: 20px;
+  }
+
+  .her-header {
+    min-height: 300px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .her-page {
+    padding: 20px 13px 60px;
+  }
+
+  .her-back-button {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    align-self: flex-start;
+
+    margin-bottom: 35px;
+  }
+
+  .her-header {
+    min-height: auto;
+  }
+
+  .her-heading h1 {
+    font-size: 48px;
+  }
+
+  .her-description {
+    font-size: 13px;
+  }
+
+  .her-count {
+    margin-top: 18px;
+  }
+
+  .photo-scrapbook {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px 16px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .memory-photo {
+    padding: 7px 7px 12px;
+  }
+
+  .photo-caption span {
+    font-size: 14px;
+  }
+
+  .tape {
+    width: 45px;
+    height: 14px;
+  }
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 390px) {
+
+  .her-heading h1 {
+    font-size: 42px;
+  }
+
+  .photo-scrapbook {
+    gap: 28px 12px;
+  }
+
+  .photo-caption span {
+    font-size: 13px;
+  }
+}
+
+
+/* =========================================
+   REDUCED MOTION
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .her-glow,
+  .her-stars span,
+  .bottom-sparkle {
+    animation: none;
+  }
+
+  .memory-photo,
+  .photo-frame img,
+  .photo-overlay,
+  .our-memories-button {
+    transition: none;
+  }
+}

@@ -1,0 +1,775 @@
+/* =========================================
+   MEMORY HUB
+========================================= */
+
+.memory-hub-page {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  padding: 25px 20px 70px;
+
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(255, 235, 134, 0.55),
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at 90% 25%,
+      rgba(255, 221, 111, 0.35),
+      transparent 28%
+    ),
+    linear-gradient(
+      145deg,
+      #fffdf1 0%,
+      #fff8d7 45%,
+      #fff3bd 100%
+    );
+
+  color: #69582e;
+}
+
+
+/* =========================================
+   BACKGROUND GLOWS
+========================================= */
+
+.hub-glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(5px);
+  pointer-events: none;
+}
+
+.hub-glow-one {
+  width: 260px;
+  height: 260px;
+  top: 180px;
+  left: -130px;
+  background: rgba(255, 224, 100, 0.2);
+}
+
+.hub-glow-two {
+  width: 300px;
+  height: 300px;
+  top: 650px;
+  right: -160px;
+  background: rgba(255, 214, 72, 0.18);
+}
+
+.hub-glow-three {
+  width: 200px;
+  height: 200px;
+  bottom: 100px;
+  left: 30%;
+  background: rgba(255, 240, 160, 0.25);
+}
+
+
+/* =========================================
+   STARS
+========================================= */
+
+.hub-stars {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.hub-stars span {
+  position: absolute;
+
+  color: rgba(206, 166, 48, 0.45);
+  font-size: 18px;
+
+  animation: hubTwinkle 3s ease-in-out infinite;
+}
+
+.hub-stars span:nth-child(1) {
+  top: 8%;
+  left: 8%;
+}
+
+.hub-stars span:nth-child(2) {
+  top: 17%;
+  right: 10%;
+  animation-delay: 0.7s;
+}
+
+.hub-stars span:nth-child(3) {
+  top: 42%;
+  left: 4%;
+  animation-delay: 1.2s;
+}
+
+.hub-stars span:nth-child(4) {
+  top: 55%;
+  right: 6%;
+  animation-delay: 0.4s;
+}
+
+.hub-stars span:nth-child(5) {
+  top: 72%;
+  left: 8%;
+  animation-delay: 1.5s;
+}
+
+.hub-stars span:nth-child(6) {
+  top: 82%;
+  right: 13%;
+  animation-delay: 0.9s;
+}
+
+.hub-stars span:nth-child(7) {
+  top: 91%;
+  left: 45%;
+  animation-delay: 1.8s;
+}
+
+@keyframes hubTwinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+
+  50% {
+    opacity: 0.9;
+    transform: scale(1.2);
+  }
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.hub-header {
+  position: relative;
+  z-index: 2;
+
+  max-width: 850px;
+  margin: 35px auto 50px;
+
+  text-align: center;
+}
+
+.hub-eyebrow {
+  margin-bottom: 13px;
+
+  color: #b29339;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+}
+
+.hub-header h1 {
+  margin: 0;
+
+  color: #604e27;
+
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(42px, 7vw, 70px);
+  font-weight: 700;
+  line-height: 0.95;
+}
+
+.hub-header h1 span {
+  display: block;
+
+  margin-top: 10px;
+
+  color: #c59b27;
+}
+
+.hub-description {
+  margin: 22px auto 0;
+
+  max-width: 600px;
+
+  color: #8d7a4a;
+
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   MEMORY OPTIONS
+========================================= */
+
+.memory-options {
+  position: relative;
+  z-index: 3;
+
+  width: min(1100px, 94%);
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 35px;
+}
+
+
+/* =========================================
+   MEMORY CARD
+========================================= */
+
+.memory-option {
+  position: relative;
+
+  padding: 18px 18px 27px;
+
+  cursor: pointer;
+
+  background: rgba(255, 253, 237, 0.82);
+
+  border: 1px solid rgba(207, 174, 76, 0.22);
+  border-radius: 25px;
+
+  box-shadow:
+    0 18px 45px rgba(132, 104, 32, 0.1),
+    0 4px 10px rgba(132, 104, 32, 0.05);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.memory-option:hover {
+  transform: translateY(-8px) rotate(-0.4deg);
+
+  box-shadow:
+    0 27px 60px rgba(132, 104, 32, 0.16),
+    0 7px 15px rgba(132, 104, 32, 0.08);
+}
+
+.our-option:hover {
+  transform: translateY(-8px) rotate(0.4deg);
+}
+
+
+/* =========================================
+   TAPE
+========================================= */
+
+.memory-option-tape {
+  position: absolute;
+
+  top: -13px;
+  left: 50%;
+
+  width: 90px;
+  height: 27px;
+
+  transform: translateX(-50%) rotate(-2deg);
+
+  background: rgba(250, 224, 126, 0.7);
+
+  border-left: 1px solid rgba(180, 150, 52, 0.12);
+  border-right: 1px solid rgba(180, 150, 52, 0.12);
+
+  z-index: 5;
+}
+
+.our-option .memory-option-tape {
+  transform: translateX(-50%) rotate(2deg);
+}
+
+
+/* =========================================
+   PREVIEW
+========================================= */
+
+.memory-preview {
+  position: relative;
+
+  width: 100%;
+  height: 330px;
+
+  margin-bottom: 25px;
+
+  overflow: hidden;
+
+  border-radius: 17px;
+
+  background: #f6efc9;
+}
+
+.memory-preview > img {
+  width: 100%;
+  height: 100%;
+
+  display: block;
+
+  object-fit: cover;
+
+  transition: transform 0.6s ease;
+}
+
+.memory-option:hover .memory-preview > img {
+  transform: scale(1.04);
+}
+
+
+/* =========================================
+   SMALL PREVIEW PHOTOS
+========================================= */
+
+.preview-small {
+  position: absolute;
+
+  width: 105px;
+  height: 125px;
+
+  padding: 6px;
+
+  background: #fffdf1;
+
+  box-shadow: 0 8px 22px rgba(80, 61, 20, 0.22);
+}
+
+.preview-small img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+}
+
+.preview-one {
+  right: 18px;
+  top: 18px;
+
+  transform: rotate(6deg);
+}
+
+.preview-two {
+  left: 18px;
+  bottom: 18px;
+
+  transform: rotate(-7deg);
+}
+
+
+/* =========================================
+   HEART
+========================================= */
+
+.preview-heart {
+  position: absolute;
+
+  right: 20px;
+  bottom: 18px;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(255, 250, 215, 0.9);
+
+  color: #c7a23c;
+
+  font-size: 23px;
+
+  box-shadow: 0 5px 15px rgba(78, 59, 18, 0.14);
+}
+
+
+/* =========================================
+   CARD CONTENT
+========================================= */
+
+.memory-option-content {
+  padding: 0 9px;
+}
+
+.option-number {
+  margin-bottom: 8px;
+
+  color: #b99a45;
+
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.memory-option-content h2 {
+  margin: 0;
+
+  color: #665328;
+
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(29px, 4vw, 39px);
+  line-height: 0.98;
+}
+
+.memory-option-content h2 span {
+  display: block;
+
+  color: #c19a31;
+}
+
+.memory-option-content > p:not(.option-number) {
+  margin: 15px 0 19px;
+
+  max-width: 430px;
+
+  color: #8d7a4b;
+
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+
+/* =========================================
+   OPEN BUTTON
+========================================= */
+
+.memory-open-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 17px;
+
+  border: 1px solid rgba(194, 155, 45, 0.25);
+  border-radius: 999px;
+
+  background: rgba(255, 244, 182, 0.7);
+
+  color: #876d2f;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+}
+
+.memory-open-button span {
+  font-size: 17px;
+
+  transition: transform 0.25s ease;
+}
+
+.memory-open-button:hover {
+  transform: translateX(3px);
+
+  background: #fff0a5;
+}
+
+.memory-open-button:hover span {
+  transform: translateX(3px);
+}
+
+
+/* =========================================
+   PARTY SECTION
+========================================= */
+
+.party-hub-section {
+  position: relative;
+  z-index: 3;
+
+  width: min(700px, 92%);
+  margin: 85px auto 0;
+
+  text-align: center;
+}
+
+.party-hub-sparkle {
+  margin-bottom: 9px;
+
+  color: #d1a82f;
+
+  font-size: 22px;
+
+  animation: sparkleFloat 2.5s ease-in-out infinite;
+}
+
+@keyframes sparkleFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+}
+
+.party-hub-section > p {
+  margin: 0 0 6px;
+
+  color: #a18b57;
+
+  font-size: 11px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.party-hub-section h2 {
+  margin: 0;
+
+  color: #67542b;
+
+  font-family: "Dancing Script", cursive;
+  font-size: clamp(35px, 6vw, 53px);
+  line-height: 1;
+}
+
+.party-hub-section h2 span {
+  display: block;
+
+  color: #c29a2e;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.party-divider {
+  width: 210px;
+
+  margin: 22px auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.party-divider span {
+  color: #c9a239;
+  font-size: 13px;
+}
+
+.party-divider i {
+  width: 50px;
+  height: 1px;
+
+  background: rgba(194, 157, 54, 0.3);
+}
+
+
+/* =========================================
+   PARTY BUTTON
+========================================= */
+
+.party-hub-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  min-width: 240px;
+
+  padding: 15px 24px;
+
+  border: none;
+  border-radius: 999px;
+
+  background: linear-gradient(
+    135deg,
+    #f8d95d,
+    #efc83e
+  );
+
+  color: #634e1d;
+
+  font-family: "Fredoka", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 12px 30px rgba(193, 153, 39, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.55);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.party-hub-button strong {
+  font-size: 20px;
+}
+
+.party-hub-button:hover {
+  transform: translateY(-4px) scale(1.02);
+
+  box-shadow:
+    0 17px 38px rgba(193, 153, 39, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+.party-hub-button:active {
+  transform: scale(0.97);
+}
+
+.party-hub-section small {
+  display: block;
+
+  margin-top: 12px;
+
+  color: #a18d59;
+
+  font-size: 10px;
+}
+
+
+/* =========================================
+   FOOTER
+========================================= */
+
+.hub-footer {
+  position: relative;
+  z-index: 2;
+
+  margin-top: 65px;
+
+  text-align: center;
+
+  color: rgba(133, 111, 61, 0.55);
+
+  font-size: 10px;
+  letter-spacing: 0.5px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 850px) {
+  .memory-options {
+    grid-template-columns: 1fr;
+    max-width: 620px;
+  }
+
+  .memory-preview {
+    height: 360px;
+  }
+
+  .party-hub-section {
+    margin-top: 70px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 550px) {
+  .memory-hub-page {
+    padding: 20px 12px 55px;
+  }
+
+  .hub-header {
+    margin: 25px auto 40px;
+  }
+
+  .hub-eyebrow {
+    font-size: 9px;
+    letter-spacing: 2px;
+  }
+
+  .hub-header h1 {
+    font-size: 43px;
+  }
+
+  .hub-description {
+    margin-top: 17px;
+    font-size: 12px;
+  }
+
+  .memory-options {
+    width: 94%;
+    gap: 30px;
+  }
+
+  .memory-option {
+    padding: 12px 12px 21px;
+    border-radius: 21px;
+  }
+
+  .memory-preview {
+    height: 300px;
+    margin-bottom: 19px;
+  }
+
+  .preview-small {
+    width: 80px;
+    height: 96px;
+  }
+
+  .preview-one {
+    right: 12px;
+    top: 12px;
+  }
+
+  .preview-two {
+    left: 12px;
+    bottom: 12px;
+  }
+
+  .preview-heart {
+    width: 35px;
+    height: 35px;
+
+    right: 13px;
+    bottom: 13px;
+
+    font-size: 19px;
+  }
+
+  .memory-option-content {
+    padding: 0 5px;
+  }
+
+  .memory-option-content h2 {
+    font-size: 30px;
+  }
+
+  .memory-option-content > p:not(.option-number) {
+    font-size: 11px;
+  }
+
+  .memory-open-button {
+    font-size: 11px;
+    padding: 9px 14px;
+  }
+
+  .party-hub-section {
+    margin-top: 60px;
+  }
+
+  .party-hub-section h2 {
+    font-size: 40px;
+  }
+
+  .party-hub-button {
+    width: 90%;
+    min-width: 0;
+  }
+
+  .hub-footer {
+    margin-top: 50px;
+  }
+}
