@@ -287,7 +287,7 @@
 
   max-width: 1150px;
 
-  min-height: 1250px;
+  min-height: 1630px;
 
   margin: 0 auto;
 
@@ -433,6 +433,34 @@
   top: 1070px;
   right: 12%;
   --duration: 8s;
+  --delay: -4s;
+}
+
+.bubble-17 {
+  top: 1260px;
+  left: 4%;
+  --duration: 8.4s;
+  --delay: -3s;
+}
+
+.bubble-18 {
+  top: 1240px;
+  left: 38%;
+  --duration: 9.1s;
+  --delay: -5s;
+}
+
+.bubble-19 {
+  top: 1260px;
+  right: 4%;
+  --duration: 7.9s;
+  --delay: -2s;
+}
+
+.bubble-20 {
+  top: 1450px;
+  left: 20%;
+  --duration: 8.7s;
   --delay: -4s;
 }
 
@@ -994,7 +1022,7 @@
 @media (max-width: 950px) {
 
   .memory-bubbles {
-    min-height: 1600px;
+    min-height: 1950px;
   }
 
   .memory-bubble {

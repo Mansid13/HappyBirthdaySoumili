@@ -71,6 +71,22 @@ function OurMemories() {
       src: `${import.meta.env.BASE_URL}photos/us/u16.jpeg`,
       message: "A little bus ride💛",
     },
+    {
+      src: `${import.meta.env.BASE_URL}photos/us/u17.jpeg`,
+      message: "we wore saree together for the first time💛",
+    },
+    {
+      src: `${import.meta.env.BASE_URL}photos/us/u18.jpeg`,
+      message: "Looking baddies frr💛",
+    },
+    {
+      src: `${import.meta.env.BASE_URL}photos/us/u19.jpeg`,
+      message: "four core",
+    },
+    {
+      src: `${import.meta.env.BASE_URL}photos/us/u20.jpeg`,
+      message: "Us in Traditionals💛",
+    },
   ];
 
   const toggleFlip = (index) => {
@@ -198,7 +214,7 @@ function OurMemories() {
               preload="metadata"
             >
               <source
-                src={`${import.meta.env.BASE_URL}videos/v1.mp4`}
+                src={`${import.meta.env.BASE_URL}videos/video1.mp4`}
                 type="video/mp4"
               />
 
