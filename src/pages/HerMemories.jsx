@@ -5,23 +5,71 @@ function HerMemories() {
   const navigate = useNavigate();
 
   const photos = [
-    { src: "/photos/soumili/s1.jpeg", message: "A little moment worth keeping 💛" },
-    { src: "/photos/soumili/s2.jpeg", message: "Just being you ✨" },
-    { src: "/photos/soumili/s3.jpeg", message: "One of those pretty moments 🌼" },
-    { src: "/photos/soumili/s4.jpeg", message: "Main character energy ✨" },
-    { src: "/photos/soumili/s5.jpeg", message: "This one had to be here 💛" },
-    { src: "/photos/soumili/s6.jpeg", message: "A tiny memory 📸" },
-    { src: "/photos/soumili/s7.jpeg", message: "Okay but look at you 🥹" },
-    { src: "/photos/soumili/s8.jpeg", message: "Another one for the memory box ✨" },
-    { src: "/photos/soumili/s9.jpeg", message: "You being you 💛" },
-    { src: "/photos/soumili/s15.jpeg", message: "This deserved a little spotlight 🌼" },
-    { src: "/photos/soumili/s11.jpeg", message: "A moment frozen in time 📸" },
-    { src: "/photos/soumili/s12.jpeg", message: "Too cute not to include 💛" },
-    { src: "/photos/soumili/s13.jpeg", message: "One more memory ✨" },
-    { src: "/photos/soumili/s14.jpeg", message: "Just a little happiness 🌻" },
-    { src: "/photos/soumili/s10.jpeg", message: "Another page in your story 💛" },
-    { src: "/photos/soumili/s16.jpeg", message: "And here's one more 🥹✨" },
-  ];
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s1.jpeg`,
+    message: "A little moment worth keeping 💛",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s2.jpeg`,
+    message: "Just being you ✨",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s3.jpeg`,
+    message: "One of those pretty moments 🌼",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s4.jpeg`,
+    message: "Main character energy ✨",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s5.jpeg`,
+    message: "This one had to be here 💛",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s6.jpeg`,
+    message: "A tiny memory 📸",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s7.jpeg`,
+    message: "Okay but look at you 🥹",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s8.jpeg`,
+    message: "Another one for the memory box ✨",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s9.jpeg`,
+    message: "You being you 💛",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s15.jpeg`,
+    message: "This deserved a little spotlight 🌼",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s11.jpeg`,
+    message: "A moment frozen in time 📸",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s12.jpeg`,
+    message: "Too cute not to include 💛",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s13.jpeg`,
+    message: "One more memory ✨",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s14.jpeg`,
+    message: "Just a little happiness 🌻",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s10.jpeg`,
+    message: "Another page in your story 💛",
+  },
+  {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s16.jpeg`,
+    message: "And here's one more 🥹✨",
+  },
+];
 
   return (
     <main className="her-page">
