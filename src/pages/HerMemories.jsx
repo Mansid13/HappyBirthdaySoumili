@@ -66,9 +66,42 @@ function HerMemories() {
     message: "Another page in your story 💛",
   },
   {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s17.jpeg`,
+    message: "And here's one more 🥹✨",
+  },
+   {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s18.jpeg`,
+    message: "Funny✨",
+  },
+   {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s19.jpeg`,
+    message: "Foody chowmili",
+  },
+   {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s20.jpeg`,
+    message: "Prezzzzzz",
+  },
+   {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s21.jpeg`,
+    message: "hows the Josshhhhhhhh",
+  },
+   {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s23.jpeg`,
+    message: "Professional Ramesh eater",
+  },
+   {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s24.jpeg`,
+    message: "Yellow chowmili",
+  },
+   {
+    src: `${import.meta.env.BASE_URL}photos/soumili/s25.jpeg`,
+    message: "candiddd",
+  },
+   {
     src: `${import.meta.env.BASE_URL}photos/soumili/s16.jpeg`,
     message: "And here's one more 🥹✨",
   },
+
 ];
 
   return (

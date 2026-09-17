@@ -85,7 +85,7 @@ function OurMemories() {
     },
     {
       src: `${import.meta.env.BASE_URL}photos/us/u20.jpeg`,
-      message: "Us in Traditionals💛",
+      message: "random clicks are always cutee💛",
     },
   ];
 
@@ -214,7 +214,7 @@ function OurMemories() {
               preload="metadata"
             >
               <source
-                src={`${import.meta.env.BASE_URL}videos/video1.mp4`}
+                src={`${import.meta.env.BASE_URL}videos/vs.mp4`}
                 type="video/mp4"
               />
 

@@ -9,7 +9,7 @@ function Welcome() {
   const [unlocked, setUnlocked] = useState(false);
   const [showHint, setShowHint] = useState(false);
 
-  const correctKeyword = "XO"; 
+  const correctKeyword = "Enhypen"; 
 
   useEffect(() => {
     const moveGlow = (e) => {
