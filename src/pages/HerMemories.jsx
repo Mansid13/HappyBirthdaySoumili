@@ -87,7 +87,7 @@ function HerMemories() {
   },
    {
     src: `${import.meta.env.BASE_URL}photos/soumili/s23.jpeg`,
-    message: "Professional Ramesh eater",
+    message: "Professional Ramen eater",
   },
    {
     src: `${import.meta.env.BASE_URL}photos/soumili/s24.jpeg`,
